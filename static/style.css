@@ -1,0 +1,93 @@
+/* Background Image */
+body {
+    background-image: url('https://phoscreative.com/wp-content/uploads/2017/10/How-to-Build-a-Powerful-College-Website-1-1-2.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo Styling */
+.logo {
+    width: 150px;  /* Adjust size of the logo */
+    height: auto;
+    margin: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #003366;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Container Styling */
+.container {
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.8);  /* Semi-transparent background */
+    padding: 30px;
+    max-width: 500px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+/* Button and Input Styling */
+input[type="text"], input[type="password"], input[type="number"], input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #00509e;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+}
+
+/* Message Styling */
+.message {
+    text-align: center;
+    color: red;
+}

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Enter Marks for UG{% endblock %}
+
+{% block content %}
+<h2>Eligible Colleges</h2>
+<p>Cutoff: {{ cutoff }}</p>
+<p>District: {{ session['district'] }}</p>
+<p>Community: {{ session['community'] }}</p>
+
+
+<table>
+    <tr>
+        <th>College Name</th>
+        <th>Department</th>
+        <th>Cutoff</th>
+        <th>District</th>
+        <th>Website</th> <!-- NEW COLUMN -->
+    </tr>
+    {% for college in colleges %}
+        <tr>
+            <td>{{ college.name }}</td>
+            <td>{{ college.department }}</td>
+            <td>{{ college.cutoff }}</td>
+            <td>{{ college.district }}</td>
+            <td><a href="{{ college.website }}" target="_blank">Visit</a></td> <!-- Website link -->
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}

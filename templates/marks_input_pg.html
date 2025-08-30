@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Enter CGPA for PG{% endblock %}
+
+{% block content %}
+<h2>Enter CGPA for Postgraduate (PG) Degree</h2>
+<form method="POST">
+    <label for="district">Select District:</label>
+    <select name="district" id="district" required>
+        <option value="Coimbatore">Coimbatore</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Madurai">Madurai</option>
+        <option value="Trichy">Trichy</option>
+    </select><br><br>
+
+    <label for="cgpa">CGPA:</label>
+    <input type="number" name="cgpa" step="0.01" required><br><br>
+
+    <label for="community">Select Community:</label>
+<select name="community" id="community" required>
+    <option value="FC">FC</option>
+    <option value="BC">BC</option>
+    <option value="MBC">MBC</option>
+    <option value="SC">SC</option>
+    <option value="ST">ST</option>
+</select><br><br>
+
+
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}

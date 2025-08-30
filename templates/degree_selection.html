@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Select Degree{% endblock %}
+{% block content %}
+<div class="form-container">
+    <h2>Select Degree and Department</h2>
+    <form method="POST">
+        <label for="degree_type">Degree Type:</label><br>
+        <select name="degree_type" id="degree_type" required>
+            <option value="">--Select Degree Type--</option>
+            <option value="UG">Undergraduate (UG)</option>
+            <option value="PG">Postgraduate (PG)</option>
+        </select><br><br>
+
+        <label for="department">Department:</label><br>
+        <select name="department" id="department" required>
+            <option value="">--Select Department--</option>
+            <option value="CSE">Computer Science Engineering (CSE)</option>
+            <option value="IT">Information Technology (IT)</option>
+            <option value="EEE">Electrical and Electronics Engineering (EEE)</option>
+            <option value="ECE">Electronics and Communication Engineering (ECE)</option>
+            <option value="ME">Mechanical Engineering (ME)</option>
+            <option value="CE">Civil Engineering (CE)</option>
+            <option value="BioTech">Biotechnology</option>
+            <option value="AI">Artificial Intelligence</option>
+            <option value="PE">Petroleum Engineering</option>
+            <option value="CHE">Chemical Engineering</option>
+        </select><br><br>
+
+        <button type="submit">Next</button>
+    </form>
+</div>
+{% endblock %}
